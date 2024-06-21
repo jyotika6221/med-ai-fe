@@ -1,27 +1,15 @@
 function Hero() {
 
-    // useEffect(() => {
-        // window.location.reload();
-    // }, []);
-    
     return (
         <div>
-            <div className="slider_area">
-                <div className="slider_active owl-carousel">
-                    <div className="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-12">
-                                    <div className="slider_text ">
-                                        <span>the best medical center</span>
-                                        <h3> <span>Bringing health</span> <br />
-                                            to life for the whole family.</h3>
-                                        <a href="#" className="boxed-btn5">Discover More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div style={{ height: '100%', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+                <div style={{ backgroundImage: 'url(./img/banner/banner.png)', height: '100vh' }} className="d-flex align-items-center overlay px-5">
+                    <div className="slider_text">
+                        <span>the best medical center</span>
+                        <h3> <span>Bringing health</span> <br />
+                            to life for the whole family.</h3>
+                        <a href="#" className="boxed-btn5">Discover More
+                        </a>
                     </div>
                 </div>
             </div>
@@ -32,7 +20,7 @@ function Hero() {
                         <div className="col-xl-6 col-lg-6">
                             <div className="welcome_thumb">
                                 <div className="thumb_1">
-                                    <img src="./img/about/1.jpg" alt="" />
+                                    <img src="./img/google-gemini.png" alt="" />
                                 </div>
                             </div>
                         </div>

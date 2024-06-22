@@ -166,7 +166,7 @@ function Content() {
                   </div>
                   <div className="info">
                     <span>Emergency Medical Care</span>
-                    <h3>+1-465 4545</h3>
+                    <h3>911</h3>
                   </div>
                 </div>
               </div>

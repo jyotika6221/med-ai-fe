@@ -9,7 +9,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import SignIn from './components/SignIn.jsx';
-// import GoogleTranslate from './components/GoogleTranslate.jsx';
+import Appointment from './components/Appointment.jsx';
 import SignUp from './components/SignUp.jsx';
 import MedicineReminder from './components/MedicineReminder.jsx';
 
@@ -24,9 +24,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/reminder" element={<MedicineReminder />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/appointment" element={<Appointment />} />
         </Routes>
         <footer>
-          {/* <GoogleTranslate /> */}
         </footer>
       </div>
     </Router>

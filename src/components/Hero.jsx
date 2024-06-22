@@ -16,12 +16,12 @@ function Hero() {
             height: "100vh",
             position: "relative",
           }}
-          className="d-flex align-items-center overlay px-5"
+          className="d-flex overlay px-5"
         >
           <div className="slider_text">
             <span>Smart Medication Adherence:</span>
             <h3>
-              <span>Your AI-Driven Health Companion</span> <br />
+              <span className="text-white">Your AI-Driven Health Companion</span> <br />
             </h3>
           </div>
         </div>
@@ -33,7 +33,7 @@ function Hero() {
             <div className="col-xl-6 col-lg-6">
               <div className="welcome_thumb">
                 <div className="thumb_1">
-                  <img src="" alt="" />
+                  <img src="./img/gemini.png" alt="Gemini Image" />
                 </div>
               </div>
             </div>

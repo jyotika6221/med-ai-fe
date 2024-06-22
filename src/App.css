@@ -111,3 +111,11 @@
     font-size: 16px;
   }
 }
+
+.modal-content{
+  z-index: 100 !important;
+}
+
+.reminder{
+  margin-top: 12rem !important;
+}

@@ -81,9 +81,12 @@ const Prescription = () => {
         </form>
 
         {apiResponse && (
-          <div className="response mt-3">
-            <pre>{JSON.stringify(apiResponse, null, 2)}</pre>
+          <div markdown="1" className="response mt-3">
+
+            {apiResponse.summary}
+            
           </div>
+
         )}
       </div>
 

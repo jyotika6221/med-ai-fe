@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../App.css"
 
 function SignIn() {
     const [username, setUsername] = useState("admin");
@@ -19,10 +18,8 @@ function SignIn() {
             });
 
             if (response.ok) {
-                // Redirect to home page on successful sign-in
                 navigate("/home");
             } else {
-                // Handle sign-in error
                 console.error("Sign-in failed");
             }
         } catch (error) {
@@ -37,12 +34,12 @@ function SignIn() {
                 <form onSubmit={handleSignIn}>
                     <input
                         type="text"
-                        placeholder="Username"
+                        placeholder="Username (admin)"
                         onChange={(e) => setUsername(e.target.value)}
                     />
                     <input
                         type="password"
-                        placeholder="Password"
+                        placeholder="Password (admin)"
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <button type="submit">Sign In</button>

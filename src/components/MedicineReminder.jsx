@@ -7,6 +7,7 @@ const MedicineReminder = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [formData, setFormData] = useState({
+    username: "",
     dose: "",
     medicineName: "",
     time: "",
@@ -28,6 +29,7 @@ const MedicineReminder = () => {
     const reminderData = {
       reminders: [
         {
+          username: formData.username,
           dose: formData.dose,
           medicineName: formData.medicineName,
           time: formData.time,
@@ -73,6 +75,16 @@ const MedicineReminder = () => {
             borderRadius: "8px",
           }}
         >
+          <Form.Group controlId="dose">
+            <Form.Label>Username</Form.Label>
+            <Form.Control
+              type="text"
+              name="usernmae"
+              value={formData.username}
+              onChange={handleChange}
+              required
+            />
+          </Form.Group>
           <Form.Group controlId="dose">
             <Form.Label>Dose</Form.Label>
             <Form.Control

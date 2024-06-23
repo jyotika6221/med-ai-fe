@@ -10,7 +10,7 @@ function SignIn() {
     const handleSignIn = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://20.40.46.106:8000/api/auth/signin", {
+            const response = await fetch("https://med-ai-be.onrender.com/api/auth/signin", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -38,13 +38,11 @@ function SignIn() {
                     <input
                         type="text"
                         placeholder="Username"
-                        value={'admin'}
                         onChange={(e) => setUsername(e.target.value)}
                     />
                     <input
                         type="password"
                         placeholder="Password"
-                        value={'admin'}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <button type="submit">Sign In</button>

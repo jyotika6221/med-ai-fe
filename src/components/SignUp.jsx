@@ -10,7 +10,7 @@ function SignUp() {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://20.40.46.106:8000/api/auth/signup', {
+      const response = await fetch('https://med-ai-be.onrender.com/api/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

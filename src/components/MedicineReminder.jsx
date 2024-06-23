@@ -38,7 +38,7 @@ const MedicineReminder = () => {
 
     try {
       const response = await axios.post(
-        "http://20.40.46.106:8000/api/twilio/sendReminders",
+        "https://med-ai-be.onrender.com/api/twilio/sendReminders",
         reminderData,
         {
           headers: {

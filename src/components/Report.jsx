@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { saveAs } from "file-saver";
+import Navbar from "./Navbar";
 
 const GenerateReport = () => {
   const [loading, setLoading] = useState(false);
@@ -12,7 +13,7 @@ const GenerateReport = () => {
 
     try {
       const response = await axios.get(
-        "http://20.40.46.106:8000/api/report/generateDoc",
+        "https://med-ai-be.onrender.com/api/report/generateDoc",
         { responseType: "blob" }
       );
 
@@ -28,17 +29,55 @@ const GenerateReport = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Generate Report</h2>
-      <button
-        className="btn btn-primary"
-        onClick={handleGenerateReport}
-        disabled={loading}
-      >
-        {loading ? "Generating..." : "Generate Report"}
-      </button>
-      {error && <p className="text-danger mt-3">{error}</p>}
-    </div>
+    <>
+
+      <Navbar />
+      <div className="container report">
+        <h2>Generate Report</h2>
+        <button
+          className="btn btn-primary"
+          onClick={handleGenerateReport}
+          disabled={loading}
+        >
+          {loading ? "Generating..." : "Generate Report"}
+        </button>
+        {error && <p className="text-danger mt-3">{error}</p>}
+      </div>
+
+
+      <div className="Emergency_contact">
+        <div className="Emergency_contact_inner ">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="single_emergency">
+                  <div className="info">
+                    <span>We are here for you</span>
+                    <h3>Book Appointment</h3>
+                  </div>
+                  <div className="info_button">
+                    <a href="#" className="boxed-btn3-white">
+                      Book Appointment
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="single_emergency align-items-center d-flex justify-content-end">
+                  <div className="icon">
+                    <i className="flaticon-call"></i>
+                  </div>
+                  <div className="info">
+                    <span>Emergency Medical Care</span>
+                    <h3>911</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

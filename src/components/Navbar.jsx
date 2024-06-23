@@ -25,9 +25,9 @@ function Navbar() {
       appointmentTime
     );
     try {
-      // Make API request to your backend
+
       const response = await axios.post(
-        "http://20.40.46.106:8000/api/twilio/appointment",
+        "https://med-ai-be.onrender.com/api/twilio/appointment",
         {
           docName,
           patientName,
@@ -72,6 +72,9 @@ function Navbar() {
                             </li>
                             <li>
                               <Link to="/prescription">Upload Prescription</Link>
+                            </li>
+                            <li>
+                              <Link to="/report">Report</Link>
                             </li>
                           </ul>
                         </nav>

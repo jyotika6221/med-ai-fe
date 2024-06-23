@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const Appointment = () => {
@@ -17,9 +17,8 @@ const Appointment = () => {
     setError(null);
 
     try {
-      // Make API request to your backend
       const response = await axios.post(
-        "http://localhost:8000/api/twilio/appointment",
+        "https://med-ai-be.onrender.com/api/twilio/appointment",
         {
           docName,
           patientName,
@@ -32,7 +31,7 @@ const Appointment = () => {
       // Handle successful response
       setLoading(false);
       setSuccessMessage("Appointment booked successfully!");
-      console.log(response.data); // Optional: Log the response from backend
+      console.log(response.data);// Optional: Log the response from backend 
     } catch (error) {
       // Handle error
       setLoading(false);

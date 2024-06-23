@@ -12,6 +12,8 @@ import SignIn from './components/SignIn.jsx';
 import Appointment from './components/Appointment.jsx';
 import SignUp from './components/SignUp.jsx';
 import MedicineReminder from './components/MedicineReminder.jsx';
+import Prescription from './components/Prescription.jsx';
+import GenerateReport from './components/Report.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -25,6 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/appointment" element={<Appointment />} />
+          <Route path="/prescription" element={<Prescription />} />
+          <Route path="/report" element={<GenerateReport />} />
         </Routes>
         <footer>
         </footer>

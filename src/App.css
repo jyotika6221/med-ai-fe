@@ -129,3 +129,124 @@
   margin: 12rem 0 12rem 0 !important;
   padding: 0 5rem 0 5rem !important;
 }
+
+.slider_text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust width as needed */
+  color: #ffffff; /* Adjust text color */
+}
+
+.slider_text span {
+  font-size: 3rem; /* Adjust the size as needed */
+  display: block;
+  font-weight: 500;
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+
+
+@media (max-width: 1024px) {
+  .slider_text h3 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+}
+
+.slider_text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #110f0f;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider_text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider_text p {
+    font-size: 16px;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.single_quality {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light gray shadow */
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 20px; /* Space between cards */
+  position: relative; /* Ensure relative positioning for absolute button */
+   font-weight: bolder;
+}
+
+.single_quality h2,
+.single_quality h3 {
+  margin-bottom: 15px;
+  font-weight: bolder;
+ 
+}
+
+.single_quality p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.learn_more_btn {
+  position: absolute;
+  bottom: 15px; /* Adjust distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  text-decoration: none;
+  color: #000000; /* Black text color */
+  background-color: #24c0f1; /* Blue background color */
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn_more_btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #000000; /* Black text color on hover */
+}
+
+.single_quality:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+.welcome_docmed_info p {
+  font-size: 18px;
+  font-weight:500;
+  color: #110f0f;
+  margin-bottom: 40px;
+  margin-top: 10px;
+   list-style: none; /* Remove default bullets */
+}
+.welcome_docmed_info ul li::before {
+  content: "🟦"; /* Bullet symbol (can be any Unicode character or font icon) */
+  position: absolute;
+  left: 0;
+  color: #01242f; /* Adjust color of the bullet */
+  font-size: 1.2rem; /* Adjust size of the bullet */
+  line-height: inherit;
+}

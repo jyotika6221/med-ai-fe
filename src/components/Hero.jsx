@@ -21,7 +21,10 @@ function Hero() {
           <div className="slider_text">
             <span>Smart Medication Adherence:</span>
             <h3>
-              <span className="text-white">Your AI-Driven Health Companion</span> <br />
+              <span className="text-white">
+                Your AI-Driven Health Companion
+              </span>{" "}
+              <br />
             </h3>
           </div>
         </div>
@@ -33,7 +36,10 @@ function Hero() {
             <div className="col-xl-6 col-lg-6">
               <div className="welcome_thumb">
                 <div className="thumb_1">
-                  <img src="./img/gemini.png" alt="Gemini Image" />
+                  <img
+                    src="https://thewallet.com.pk/wp-content/uploads/2023/12/gemini.jpeg"
+                    alt="Gemini Image"
+                  />
                 </div>
               </div>
             </div>
@@ -48,8 +54,8 @@ function Hero() {
                   dedicated to revolutionizing the healthcare system by
                   leveraging artificial intelligence for social impact. Our
                   mission is to enhance medical diagnostics, treatment planning,
-                  and healthcare delivery through AI technologies
-                  making it more accessible, efficient, and personalized. 
+                  and healthcare delivery through AI technologies making it more
+                  accessible, efficient, and personalized.
                 </p>
                 <ul>
                   <li>
@@ -66,7 +72,6 @@ function Hero() {
                     <i className="flaticon-verified"></i> Multi-language support
                   </li>
                 </ul>
-            
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ const GenerateReport = () => {
     setError(null);
 
     try {
-      const response = await axios.get(
+      const response = await axios.post(
         "https://med-ai-be.onrender.com/api/report/generateDoc",
         { responseType: "blob" }
       );

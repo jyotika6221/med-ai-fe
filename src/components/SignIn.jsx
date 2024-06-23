@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "../App.css"
 
 function SignIn() {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    const [username, setUsername] = useState("admin");
+    const [password, setPassword] = useState("admin");
     const navigate = useNavigate();
 
     const handleSignIn = async (e) => {
